@@ -1,0 +1,32 @@
+<style>
+.search{
+}
+.search input[type=text] {
+  position:fixed;
+  top:3%;
+  left:82%;
+  width: 25%;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+ /*background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;*/
+  padding: 8px;
+ /*-webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;*/
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+.search input[type=text]:focus {
+  width: 74%;
+  border: 1px solid black;
+}
+
+::placeholder{
+color:black;
+}
+
+</style>

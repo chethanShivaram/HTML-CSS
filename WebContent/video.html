@@ -1,0 +1,136 @@
+<html>
+<head>
+<style>
+.o-mainFooter__footerLinksColumn{
+border-top:1px solid #000;
+padding:1.25em 3.125em 1em
+}
+
+@media print, screen and (min-width: 46.875em){
+.o-mainFooter__footerLinksColumn{
+float:left;
+border-top:0}
+.o-mainFooter__footerLinksColumn:nth-child(3n+1){
+clear:both}}
+
+@media print, screen and (min-width: 73.75em){
+.o-mainFooter__footerLinksColumn{
+padding:1.125em .625em .9375em 1.5625em}
+.o-mainFooter__footerLinksColumn h2:before{left:-25px}
+.o-mainFooter__footerLinksColumn:nth-child(3n+1){clear:none}}
+.o-mainFooter__footerLinksColumn h2{
+margin:0;
+font-size:.8rem;
+text-transform:uppercase;
+color:#555;
+position:relative;
+cursor:pointer;
+font-weight:bold}
+.o-mainFooter__footerLinksColumn h2:before{
+content:"+";
+position:absolute;
+border:1px solid #000;
+color:#000;
+left:-25px;
+width:19px;
+height:19px;
+padding:.0625em .125em;
+box-sizing:border-box;
+top:-3px;
+font-size:20px;
+line-height:17px;font-weight:normal}
+.o-mainFooter__footerLinksColumn h2.o-activeFooterRow:before{content:"-";padding:0 .25em}
+</style>
+</head>
+<body>
+    <div class="o-mainFooter__footerLinksColumn ">
+    <h2 onclick="myFunction()">About Lenovo</h2>
+    <div id="myDropdown">
+        <ul><li><a href="#default.asp">Our Company</a></li>
+        <li><a class="a-link - " href="#default.asp">News</a></li>
+        <li><a class="a-link - " href="#default.asp">Social Responsibility</a></li>
+        <li><a class="a-link - " href="#default.asp">Investors Relations</a></li>
+        <li><a class="a-link - " href="#default.asp">Legal Information</a></li>
+        <li><a class="a-link - " href="#default.asp">Jobs at Lenovo</a></li></ul>
+    </div></div>
+    
+    <div class="o-mainFooter__footerLinksColumn">
+    <h2 onclick="myFunction()">PRODUCTS &amp; SERVICES</h2>
+    <div id="myDropdown">
+        <ul><li><a class="a-link - " href="#default.asp">Our Company</a></li>
+        <li><a class="a-link - " href="#default.asp">News</a></li>
+        <li><a class="a-link - " href="#default.asp">Social Responsibility</a></li>
+        <li><a class="a-link - " href="#default.asp">Investors Relations</a></li>
+        <li><a class="a-link - " href="#default.asp">Legal Information</a></li>
+        <li><a class="a-link - " href="#default.asp">Jobs at Lenovo</a></li></ul>
+    </div></div>
+    
+   <div id="myDropdown" class="o-mainFooter__footerLinksColumn">
+    <h2 onclick="myFunction()">CUSTOMER SUPPORT</h2>
+    <div  id="myDropdown">
+        <ul><li><a class="a-link - " href="#default.asp">Service Provider List</a></li>
+        <li><a class="a-link - " href="#default.asp">Where to Buy</a></li>
+        <li><a class="a-link - " href="#default.asp">FQAs</a></li>
+        </ul>
+    </div></div>
+    
+    <div class="o-mainFooter__footerLinksColumn">
+    <h2 onclick="myFunction()">RESOURCES</h2>
+    <div id="myDropdown">
+        <ul><li><a class="a-link - " href="#default.asp">Contact Us</a></li>
+        <li><a class="a-link - " href="#default.asp">Find a Dealer</a></li>
+        <li><a class="a-link - " href="#default.asp">Email Sign-Up</a></li>
+        <li><a class="a-link - " href="#default.asp">Support</a></li>
+        <li><a class="a-link - "href="#default.asp">E-Waste Management</a></li>
+        <li><a class="a-link - " href="#default.asp">Blog</a></li>
+        <li><a class="a-link - " href="#default.asp">Statement on Superfish</a></li></ul>
+    </div></div>
+    
+    <div class="o-mainFooter__footerLinksColumn">
+    <h2 onclick="myFunction()">Portfolio</h2>
+    <div id="myDropdown">
+        <ul><li><a class="a-link -" href="#default.asp">ThinkPad T Series</a></li>
+        <li><a class="a-link - " href="#default.asp">ThinkPad X Series</a></li>
+        <li><a class="a-link - " href="#default.asp">ThinkPad</a></li>
+        <li><a class="a-link - " href="#default.asp">Ideapad</a></li>
+        <li><a class="a-link - " href="#default.asp">Yoga</a></li>
+        <li><a class="a-link - " href="#default.asp">M Series Towers</a></li>
+        <li><a class="a-link - " href="#default.asp">ThinkCentre</a></li>
+        <li><a class="a-link - " href="#default.asp">ThinkCentre X1</a></li>
+        <li><a class="a-link - " href="#default.asp">Ideacentre</a></li>
+        <li><a class="a-link - " href="#default.asp">Tablets</a></li>
+        <li><a class="a-link - " href="#default.asp">Thinkstation</a></li>
+        <li><a class="a-link - " href="#default.asp">Data Center Solutions</a></li></ul>
+        </div></div>
+        
+        <div class="o-mainFooter__footerLinksColumn">
+        <h2 onclick="myFunction()">SOLUTIONS</h2>
+        <div id="myDropdown" >
+       <ul><li><a class="a-link - " href="#default.asp">Think Progress</a></li>
+        <li><a class="a-link - " href="#default.asp">Business Partners</a></li></ul>
+        </div></div>
+
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.o-mainFooter__footerLinks')) {
+    var dropdowns = document.getElementsByClassName("o-mainFooter__footerLinksContent");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>

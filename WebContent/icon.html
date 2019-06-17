@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+.tooltip {
+    display:inline-block;
+    position:relative;
+    border-bottom:1px dotted #666;
+    text-align:left;
+}
+
+.tooltip .bottom {
+    min-width:200px; 
+    transform:translate(-70%, 0);
+    padding:10px 20px;
+    color:black;
+    background-color:white;
+    font-weight:normal;
+    font-size:13px;
+    border-radius:8px;
+    z-index:99999999;
+    box-sizing:border-box;
+    border:1px solid black;
+    box-shadow:0 1px 8px #FFFFFF;
+    display:none;
+}
+
+.tooltip:hover .bottom {
+    display:block;
+}
+
+.tooltip .bottom i {
+    position:absolute;
+    bottom:100%;
+    left:70%;
+    margin-left:-12px;
+    width:24px;
+    height:12px;
+    overflow:hidden;
+}
+
+.tooltip .bottom i::after {
+    content:'';
+    position:absolute;
+    width:12px;
+    height:12px;
+    left:50%;
+    transform:translate(-50%,50%) rotate(45deg);
+    background-color:#3300FF;
+    border:1px solid #000000;
+    box-shadow:0 1px 8px #FFFFFF;
+}
+</style>
+</head>
+<body>
+<div class="btn btn-primary tooltip"><img style="position:fixed;top:1%;right:10%;"  alt="enquiry" src="headset.png" width="20" height="20">
+    <div class="bottom" style="position:fixed; left:89%;">
+        <h>SALES ENQUIRIES<h>
+       <p> 1-800-4199-733
+         All days: 8am to 8pm IST</p>
+         <a href="#">Sign In</a>
+         <a href="#">Orders</a>
+         <a href="#">Product Registration</a>
+         <i></i>
+    </div>
+</div>
+</body>
+</html>

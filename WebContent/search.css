@@ -1,0 +1,30 @@
+<style>
+.search{
+
+}
+.search input[type=text] {
+  position:fixed;
+  top:16px;
+  left:82%;
+  width: 25%;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+  background-image:url("searchicon.png");
+  padding: 8px;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+.search input[type=text]:focus {
+  width: 72%;
+  border: 1px solid black;
+}
+
+::placeholder{
+color:black;
+}
+</style>

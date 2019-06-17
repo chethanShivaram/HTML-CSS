@@ -1,0 +1,44 @@
+<style>
+.o-mainFooter{
+	background-color:#bbb
+	}
+	@media print, screen and (min-width: 73.75em){
+	.o-mainFooter{
+	padding:.9375em 1.875em;position:relative}}
+	.o-mainFooter__footerLinks{
+	margin-top:.9375em;border-bottom:1px solid #000}
+	
+	@media print, screen and (min-width: 46.875em){
+	.o-mainFooter__footerLinks{border-bottom:0}}
+	
+	@media print, screen and (min-width: 73.75em){
+	.o-mainFooter__footerLinks{padding-left:0}}
+	.o-mainFooter__footerLinksColumn{border-top:1px solid #000;padding:1.25em 3.125em 1em}
+	
+	@media print, screen and (min-width: 46.875em){
+	.o-mainFooter__footerLinksColumn{float:left;border-top:0}
+	.o-mainFooter__footerLinksColumn:nth-child(3n+1){clear:both}}
+	
+	@media print, screen and (min-width: 73.75em){
+	.o-mainFooter__footerLinksColumn{padding:1.125em .625em .9375em 1.5625em}
+	.o-mainFooter__footerLinksColumn h2:before{left:-25px}
+	.o-mainFooter__footerLinksColumn:nth-child(3n+1){clear:none}}
+	.o-mainFooter__footerLinksColumn h2{margin:0;font-size:.8rem;text-transform:uppercase;color:#555;position:relative;cursor:pointer;font-weight:bold}
+	.o-mainFooter__footerLinksColumn h2:before{content:"+";position:absolute;border:1px solid #000;color:#000;left:-25px;width:19px;height:19px;padding:.0625em .125em;box-sizing:border-box;top:-3px;font-size:20px;line-height:17px;font-weight:normal}
+	.o-mainFooter__footerLinksColumn h2.o-activeFooterRow:before{content:"-";padding:0 .25em}
+	.o-mainFooter__footerLinksContent{height:0;overflow:hidden}
+	.o-mainFooter__footerLinksContent ul{margin:.625em 0 0 0;padding:0;list-style:none}
+	.o-mainFooter__footerLinksContent ul li{margin:0;padding:0 0 .3125em 0;line-height:1em}
+	.o-mainFooter__footerLinksContent ul li a{font-size:.8rem;color:#373737;text-decoration:none}
+	.o-mainFooter__footerLinksContent ul li a:hover{text-decoration:underline}
+	.o-mainFooter__trustee{clear:none;margin:1em 0 0 0;float:left;width:7em;padding-top:0}
+	
+	@media screen and (min-width: 73.75em) and (max-width: 79.99875em){
+	.o-mainFooter__trustee{padding-top:1.5em}}
+	.o-mainFooter__trusteeIcon{background-image:url("//static.lenovo.com/fea/images/footer-icons.png");background-repeat:no-repeat;background-position:0 -460px;width:100%;display:inline-block;height:33px}
+	.o-mainFooter__trusteeIcon:hover{background-position:0 -495px}
+	.o-mainFooter__processorlogo{display:block}
+	.o-mainFooter__processorlogoright{float:right}
+	.o-mainFooter__processorlogoleft{float:left}
+	.reveal-overlay{z-index:9999}
+	</style>

@@ -1,0 +1,51 @@
+<style>
+.account {
+    display:inline-block;
+    position:relative;
+    text-align:left;  
+}
+
+.account .dropdown{
+    min-width:180px; 
+    transform:translate(-70%, 0);
+    padding:10px 15px;
+    font-color:black;
+    background-color:white;
+    z-index:99999999;
+    box-sizing:border-box;
+    border:1px solid grey;
+    box-shadow:0 1px 8px #FFFFFF;
+    display:none;
+    position:absolute;
+    top:10%;
+}
+
+.account:hover .dropdown {
+    display:block;
+}
+
+.account .dropdown i {
+    position:absolute;
+    bottom:100%;
+    right:24%;
+    margin-left:-12px;
+    width:24px;
+    height:12px;
+    overflow:hidden;
+}
+.account .dropdown i::after {
+    content:'';
+    position:absolute;
+    width:20px;
+    height:12px;
+    left:50%;
+    transform:translate(-50%,50%) rotate(50deg);
+    background-color:white;
+    border:1px solid grey;
+    box-shadow:0 1px 8px #FFFFFF;
+}
+.content{
+font-size:14px;
+}
+
+</style>
